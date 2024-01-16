@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project - Case</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div>Katik</div>
+                <div>Kalkulator Matematik</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="main-conten">
+
+        <div class="main-container">
+            <div class="main-content">
+
+            <div class="content-item">
+                <h2>Welcome to Katik</h2>
+                <p class="item">Halo sobat, <br>Selamat datang di ketik Sebuah Web Sederhana yang bertugas untuk menghitung nilai luas dan Keliling Bangun datar.
+                </p>
+            </div>
+
+            <h3>Keliling Persegi</h3>
+
+            <div class="content-item-xy">
+
+                <div class="content-item-x">             
+                    <div class="content-item row-one">
+                        <br>
+                        <h4>Rumus Keliling Persegi</h4>
+                        <span>K = 4 x S</span>
+                    </div>
+    
+                    <div class="content-item row-two">
+                        <p>
+                            Dimana :
+                            <br> 
+                            K = Keliling
+                            <br>
+                            S = Sisi
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="content-item-x">
+                    <img src="img/persegi.png" alt="">
+                </div>
+
+            </div>
+
+            <h3>Luas Persegi</h3>
+            <div class="content-item-xy">
+
+                <div class="content-item-x">             
+                    <div class="content-item row-one">
+                        <br>
+                        <h4>Rumus Luas Persegi</h4>
+                        <span>L = S x S</span>
+                    </div>
+    
+                    <div class="content-item row-two">
+                        <p>
+                            Dimana :
+                            <br> 
+                            L = Luas
+                            <br>
+                            S = Sisi
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="content-item-x">
+                    <img src="img/persegi.png" alt="">
+                </div>
+
+            </div>
+
+            
+            <div class="conten-item-hitung">
+                
+                <div class="conten-item container-item-k">
+                    <div class="content-item-k">
+                        <h4>Hitung Keliling Persegi</h4>
+                        <input class="form" type="number" id="input-k"  placeholder="Nilai sisi">
+                        
+                        <button type="submit" class="btn-button" id="btn-hitungKeliling">Hitung</button>
+                        <button type="reset" class="btn-button" id="btn-reset-keliling">Reset</button>
+                        <p>Hasil</p>
+                        <div class="result">
+                            <span id="hasil-k"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conten-item container-item-k">
+                    <div class="content-item-k">
+                        <h4>Hitung Luas Persegi</h4>
+                        <input class="form" type="number" id="input-l" oninput="kel()" placeholder="Nilai sisi">
+                        
+                        <button type="submit" class="btn-button" id="btn-hitungLuas">Hitung</button>
+                        <button type="reset" class="btn-button" id="btn-reset-luas">Reset</button>
+                        <p>Hasil</p>
+                        <div class="result">
+                            <span id="hasil-l"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <section id="footer">
+        <p style="text-align: center;">muhammadnurkamal@2024</p>
+        <br>
+        <br>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

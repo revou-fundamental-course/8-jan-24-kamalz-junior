@@ -1,0 +1,173 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+.header-container{
+    width: 80%;
+    margin: auto;
+}
+
+.main-container{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 2px solid gold; */
+}
+
+.header-content{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding: 10px;
+    background-color: #222222;
+    color: aliceblue;
+}
+
+.main-container h2{
+    border: 2px solid;
+    border-radius: 99px;
+    color: #222222;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.main-container img{
+    display: block;
+    width: 180px;
+    /* width: 80%; */
+    
+    
+}
+
+.main-content h3{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #222;
+    border-radius: 99px;
+
+}
+
+.item{
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.row-one{
+    margin-bottom: 5px;
+}
+.content-item-xy{
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin-bottom: 20px;
+}
+.content-item-k{
+    width: 340px;
+    margin-top: 2cqi;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.form{
+    
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.btn-button{
+    width: 145px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.conten-item-hitung{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #222;
+  border-radius: 30px;
+  gap: 20px;
+  /* background-color: darkcyan; */
+  
+}
+
+.content-item-k h4{
+  margin-bottom: 10px;
+}
+
+.container-item-k{
+  display: flex;
+  height: 350px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border: 1px solid yellow;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin: 5px auto;
+}
+
+
