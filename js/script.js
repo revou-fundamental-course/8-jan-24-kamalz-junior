@@ -1,40 +1,55 @@
 
-
 const btnKeliling = document.getElementById("btn-hitungKeliling");
 const btnReset = document.getElementById("btn-reset-keliling");
+const alertErrorKeliling = document.getElementById("alert-error-keliling");
 const hasilKeliling  = document.getElementById("hasil-k");
 const inputKeliling  = document.getElementById("input-k");
 
-btnKeliling.addEventListener("click", function(){
-    var sisi = inputKeliling.value;
-    var keliling = 4 * sisi;
+const btnLuas = document.getElementById("btn-hitungLuas");
+const btnResetLuas = document.getElementById("btn-reset-luas");
+const alertErrorLuas = document.getElementById("alert-error-luas");
+const hasilLuas  = document.getElementById("hasil-l");
+const inputLuas  = document.getElementById("input-l");
 
-    hasilKeliling.innerHTML = keliling;
+btnKeliling.addEventListener("click", function(){
+    if(inputKeliling.value !== ''){
+        var sisi = inputKeliling.value;
+        var keliling = 4 * sisi;
+
+        hasilKeliling.innerHTML = keliling;
+        alertErrorKeliling.innerHTML = '';
+        
+    }else{
+        alertErrorKeliling.innerHTML = 'Harap Isi Dulu';
+
+    }
+    
 })
 
 btnReset.addEventListener("click", function(){
     inputKeliling.value = "";
     hasilKeliling.innerHTML = "";
+    alertErrorKeliling.innerHTML = '';
 })
 
 
-
-
-const btnLuas = document.getElementById("btn-hitungLuas");
-const btnResetLuas = document.getElementById("btn-reset-luas");
-const hasilLuas  = document.getElementById("hasil-l");
-const inputLuas  = document.getElementById("input-l");
-
 btnLuas.addEventListener("click", function(){
-    var sisi = inputLuas.value;
-    var luas = sisi * sisi;
+    if(inputLuas.value !==''){
+        var sisi = inputLuas.value;
+        var luas = sisi * sisi;
 
-
-    hasilLuas.innerHTML = luas;
+        hasilLuas.innerHTML = luas;
+        alertErrorLuas.innerHTML = '';
+    }
+    else{
+        alertErrorLuas.innerHTML = 'Harap Isi Dulu';
+    }
+    
 })
 
 btnResetLuas.addEventListener("click", function(){
     inputLuas.value = "";
     hasilLuas.innerHTML = "";
+    alertErrorLuas.innerHTML = '';
 })
 
