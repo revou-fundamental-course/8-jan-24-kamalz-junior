@@ -1,15 +1,16 @@
 
-const btnKeliling = document.getElementById("btn-hitungKeliling");
-const btnReset = document.getElementById("btn-reset-keliling");
-const alertErrorKeliling = document.getElementById("alert-error-keliling");
-const hasilKeliling  = document.getElementById("hasil-k");
-const inputKeliling  = document.getElementById("input-k");
+var btnKeliling = document.getElementById("btn-hitungKeliling");
+var btnReset = document.getElementById("btn-reset-keliling");
+var alertErrorKeliling = document.getElementById("alert-error-keliling");
+var hasilKeliling  = document.getElementById("hasil-k");
+var inputKeliling  = document.getElementById("input-k");
 
-const btnLuas = document.getElementById("btn-hitungLuas");
-const btnResetLuas = document.getElementById("btn-reset-luas");
-const alertErrorLuas = document.getElementById("alert-error-luas");
-const hasilLuas  = document.getElementById("hasil-l");
-const inputLuas  = document.getElementById("input-l");
+var btnLuas = document.getElementById("btn-hitungLuas");
+var btnResetLuas = document.getElementById("btn-reset-luas");
+var alertErrorLuas = document.getElementById("alert-error-luas");
+var hasilLuas  = document.getElementById("hasil-l");
+var inputLuas  = document.getElementById("input-l");
+
 
 btnKeliling.addEventListener("click", function(){
     if(inputKeliling.value !== ''){
@@ -25,6 +26,8 @@ btnKeliling.addEventListener("click", function(){
     }
     
 })
+
+
 
 btnReset.addEventListener("click", function(){
     inputKeliling.value = "";

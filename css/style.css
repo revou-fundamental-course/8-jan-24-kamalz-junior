@@ -181,8 +181,17 @@ h6 {
 
 }
 
+.btn-button:active {
+  transform: translateY(5px);
+}
+
+button:disabled {
+  background-color: red;
+}
+
 .alert-warning {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: red;
 }
 
